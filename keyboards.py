@@ -10,9 +10,9 @@ main_keyboard = ReplyKeyboardMarkup(
 )
 
 quiz_topics_keyboard = InlineKeyboardMarkup([
-    [buttons.science_button],
-    [buttons.history_button],
-    [buttons.movies_button]
+    [buttons.science_button, buttons.history_button],
+    [buttons.movies_button, buttons.geography_button],
+    [buttons.sports_button]
 ])
 
 new_quiz_keyboard = InlineKeyboardMarkup([
