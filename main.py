@@ -157,7 +157,7 @@ user_data = {}
 @bot.on_message(filters.command("start") | button_filter(buttons.start_button))
 async def start_handler(client: Client, message: Message):
     await message.reply(
-        "Привет я - твой бот. Узнать про мои команды: /help",
+        "Привет! Это бот викторина. Чтобы начать напиши /quiz, а если что то непонятно нажми /help",
         reply_markup=keyboards.main_keyboard
     )
 
