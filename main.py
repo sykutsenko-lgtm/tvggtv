@@ -182,7 +182,7 @@ async def quiz_topic_selection(client, callback_query):
 
     questions = quiz_questions[topic].copy()
     random.shuffle(questions)
-    questions = questions[:5]  # Берем 5 случайных вопросов
+    questions = questions[:5]
 
     user_data[user_id] = {
         "topic": topic,
@@ -296,4 +296,6 @@ async def new_quiz_handler(client, callback_query):
     await callback_query.answer()
 
 
-bot.run()
+if __name__ == "__main__":
+    print("Бот запускается...")
+    bot.run()
